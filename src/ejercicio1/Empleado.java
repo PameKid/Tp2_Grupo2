@@ -70,10 +70,8 @@ public class Empleado extends Persona implements Comparable<Empleado>{
 		return 0;
 	}
 
+	@Override
 	public int hashCode() {
-      int resultado = super.hashCode();
-      resultado += this.puesto == null ? 0 : this.puesto.hashCode();
-      resultado += this.legajo;
-      return resultado;
+      return super.hashCode();
    }
 }
