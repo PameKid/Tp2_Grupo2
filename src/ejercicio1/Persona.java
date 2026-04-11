@@ -177,5 +177,20 @@ public class Persona {
 	    }
 	}
 	
+	@Override
+	public int hashCode() {
+		int resultado = 1;
+		
+		resultado += ((dni == null) ? 0 : dni.hashCode());
+		resultado += ((nombre == null) ? 0 : nombre.hashCode());
+		resultado += ((apellido == null) ? 0 : apellido.hashCode());
+		resultado += ((fechaNacimiento == null) ? 0 : fechaNacimiento.hashCode());
+		resultado += ((genero == null) ? 0 : genero.hashCode());
+		resultado += ((direccion == null) ? 0 : direccion.hashCode());
+		resultado += ((telefono == null) ? 0 : telefono.hashCode());
+		resultado += ((email == null) ? 0 : email.hashCode());
+		
+		return resultado;
+	}
 
 }

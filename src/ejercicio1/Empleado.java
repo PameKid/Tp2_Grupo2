@@ -69,4 +69,11 @@ public class Empleado extends Persona implements Comparable<Empleado>{
 		// si el dni es duplicado se retorna 0
 		return 0;
 	}
+
+	public int hashCode() {
+      int resultado = super.hashCode();
+      resultado += this.puesto == null ? 0 : this.puesto.hashCode();
+      resultado += this.legajo;
+      return resultado;
+   }
 }
