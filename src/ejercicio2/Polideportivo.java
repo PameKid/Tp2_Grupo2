@@ -19,6 +19,22 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 		this.superficie = superficie;
 		this.tipoDeInstalacion = tipoDeInstalacion;
 	}
+	
+	 public String getNombre() {
+	        return nombre;
+	    }
+
+		@Override
+		public int getTipoDeInstalacion() {
+			// TODO
+			return 0;
+		}
+
+		@Override
+		public double getSuperficieEdificio() {
+			// TODO 
+			return 0;
+		}
 
 	public void setNombre(String nombre) {
 		if (nombre == null || nombre.trim().isEmpty()) {
@@ -42,17 +58,5 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 	}
 
 	
-	// Se dejan las estructuras de los métodos de interfaces porque sino Java se queja
-	@Override
-	public int getTipoDeInstalacion() {
-		// TODO
-		return 0;
-	}
-
-	@Override
-	public double getSuperficieEdificio() {
-		// TODO 
-		return 0;
-	}
 
 }
