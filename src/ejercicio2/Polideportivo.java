@@ -26,14 +26,12 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 
 		@Override
 		public int getTipoDeInstalacion() {
-			// TODO
-			return 0;
+			return tipoDeInstalacion;
 		}
 
 		@Override
 		public double getSuperficieEdificio() {
-			// TODO 
-			return 0;
+			return superficie;
 		}
 
 	public void setNombre(String nombre) {
@@ -55,6 +53,12 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 			throw new IllegalArgumentException("El tipo de instalación debe ser mayor a 0.");
 		}
 		this.tipoDeInstalacion = tipoDeInstalacion;
+	}
+
+	@Override
+	public String toString() {
+		return "Polideportivo [nombre=" + nombre + ", superficie=" + superficie + ", tipoDeInstalacion="
+				+ tipoDeInstalacion + "]";
 	}
 
 	
