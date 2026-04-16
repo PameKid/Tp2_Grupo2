@@ -30,8 +30,7 @@ public class MainEjercicio2 {
 				System.out.println(polideportivo);
 			} else if (edificio instanceof EdificioDeOficinas) {
 				EdificioDeOficinas edificioDeOficinas = (EdificioDeOficinas) edificio;
-				System.out.println("EdificioDeOficinas [superficie=" + edificioDeOficinas.getSuperficieEdificio()
-						+ ", numeroDeOficinas=" + edificioDeOficinas.getNumeroDeOficinas() + "]");
+				System.out.println(edificioDeOficinas);
 			}
 		}
 	}

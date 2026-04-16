@@ -45,6 +45,10 @@ public class EdificioDeOficinas implements Edificio {
 		return superficieOficina*numeroDeOficinas;
 	}
 	
+	@Override
+	public String toString() {
+		return "Superficie:" + getSuperficieEdificio() + ",Oficinas;" + numeroDeOficinas;
+	} 
 	
 	
 	
