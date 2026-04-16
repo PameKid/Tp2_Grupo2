@@ -162,6 +162,9 @@ public class Persona {
 	//método verificar DNI
 	
 	public static void verificarDNI(String dni) {
+		if (dni == null) {
+			throw new ExVerificarDNI();
+		}
 
 		boolean esNumerico = true; //el booleano asumimos que son todos numeros.
 		
